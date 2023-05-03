@@ -24,6 +24,14 @@ public class Product {
 	public Product() {
 	}
 
+	public Product(int pno, String productname, int productprize, int productquqntity) {
+		super();
+		Pno = pno;
+		this.productname = productname;
+		this.productprize = productprize;
+		this.productquqntity = productquqntity;
+	}
+
 	public Product(String productname, int productprize, int productquqntity) {
 		this.productname = productname;
 		this.productprize = productprize;
@@ -64,6 +72,7 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [Pno=" + Pno + ", productname=" + productname + ", productprize=" + productprize + ", productquqntity=" + productquqntity + "]";
+		return "Product [Pno=" + Pno + ", productname=" + productname + ", productprize=" + productprize
+				+ ", productquqntity=" + productquqntity + "]";
 	}
 }

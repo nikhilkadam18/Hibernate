@@ -12,8 +12,8 @@ import javax.persistence.Table;
 public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
-	private int id;
+	@Column(name = "Id")
+	private int Id;
 	@Column(name = "first_name")
 	private String firstName;
 	@Column(name = "last_name")
@@ -22,20 +22,23 @@ public class Student {
 	private String email;
 
 	public Student() {
+	
 	}
 
-	public Student(String firstName, String lastName, String email) {
+	public Student(int id,String firstName, String lastName, String email) {
+		super();
+		Id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
 
 	public int getId() {
-		return id;
+		return Id;
 	}
 
 	public void setId(int id) {
-		this.id = id;
+		this.Id = Id;
 	}
 
 	public String getFirstName() {
@@ -64,6 +67,6 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+		return "Student [Id=" + Id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
 }
