@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
+import com.entity.Drinks;
 import com.entity.Product;
 import com.entity.Student;
 
@@ -35,6 +36,7 @@ public class HibernateUtil {
 				// mapping of resource or pojo class 
 				configuration.addAnnotatedClass(Student.class);
 				configuration.addAnnotatedClass(Product.class);
+				configuration.addAnnotatedClass(Drinks.class);
 				
 				ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
 				

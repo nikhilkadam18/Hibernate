@@ -32,11 +32,11 @@ public class Product {
 		this.productquqntity = productquqntity;
 	}
 
-	public Product(String productname, int productprize, int productquqntity) {
+	/*public Product(String productname, int productprize, int productquqntity) {
 		this.productname = productname;
 		this.productprize = productprize;
 		this.productquqntity = productquqntity;
-	}
+	}*/
 
 	public int getPno() {
 		return Pno;
